@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testclasses><novalnetbackoffice><testclass>com.novalnet.backoffice.editors.PaymentAccessKeyEditorTest</testclass><testclass>com.novalnet.backoffice.editors.ProductActivationKeyEditorTest</testclass><testclass>com.novalnet.backoffice.editors.TariffIdEditorTest</testclass></novalnetbackoffice></testclasses>
