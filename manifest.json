@@ -1,1 +1,91 @@
 
+{
+    "commerceSuiteVersion": "2211-jdk21",
+    "extensions": [
+        "novalnetcore",
+        "novalnetocc",
+        "novalnetbackoffice",
+        "novalnetcheckoutaddon",
+        "novalnetordermanagement"
+    ],
+    "storefrontAddons": [
+        {
+            "template": "yacceleratorstorefront",
+            "storefronts": [
+                "yacceleratorstorefront"
+            ],
+            "addons": [
+                "novalnetcheckoutaddon"
+            ]
+        }
+    ],
+    "aspects": [
+        {
+            "name": "backoffice",
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": "/backoffice"
+                }
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "storefrontContextRoot",
+                    "value": ""
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                }
+            ]
+        },
+        {
+            "name": "api",
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "commercewebservices",
+                    "contextPath": "/occ"
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                }
+            ]
+        }
+    ]
+}
